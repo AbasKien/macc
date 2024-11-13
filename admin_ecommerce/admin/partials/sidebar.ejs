@@ -1,0 +1,215 @@
+<div class="main-nav">
+    <!-- Sidebar Logo -->
+    <div class="logo-box">
+         <a href="index.ejs" class="logo-dark">
+              <img src="assets/images/logo-sm.png" class="logo-sm" alt="logo sm">
+              <img src="assets/images/logo-dark.png" class="logo-lg" alt="logo dark">
+         </a>
+
+         <a href="index.ejs" class="logo-light">
+              <img src="assets/images/logo-sm.png" class="logo-sm" alt="logo sm">
+              <img src="assets/images/logo-light.png" class="logo-lg" alt="logo light">
+         </a>
+    </div>
+
+    <!-- Menu Toggle Button (sm-hover) -->
+    <button type="button" class="button-sm-hover" aria-label="Show Full Sidebar">
+         <iconify-icon icon="solar:double-alt-arrow-right-bold-duotone" class="button-sm-hover-icon"></iconify-icon>
+    </button>
+
+    <div class="scrollbar" data-simplebar>
+         <ul class="navbar-nav" id="navbar-nav">
+
+              <li class="menu-title">General</li>
+
+              <li class="nav-item">
+                   <a class="nav-link" href="index.ejs">
+                        <span class="nav-icon">
+                             <iconify-icon icon="solar:widget-5-bold-duotone"></iconify-icon>
+                        </span>
+                        <span class="nav-text"> Dashboard </span>
+                   </a>
+              </li>
+
+              <li class="nav-item">
+                   <a class="nav-link menu-arrow" href="#sidebarProducts" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarProducts">
+                        <span class="nav-icon">
+                             <iconify-icon icon="solar:t-shirt-bold-duotone"></iconify-icon>
+                        </span>
+                        <span class="nav-text"> Products </span>
+                   </a>
+                   <div class="collapse" id="sidebarProducts">
+                        <ul class="nav sub-navbar-nav">
+                             <li class="sub-nav-item">
+                                  <a class="sub-nav-link" href="product-list.ejs">List</a>
+                             </li>
+                             <li class="sub-nav-item">
+                                  <a class="sub-nav-link" href="product-grid.ejs">Grid</a>
+                             </li>
+                             <li class="sub-nav-item">
+                                  <a class="sub-nav-link" href="product-details.ejs">Details</a>
+                             </li>
+                             <li class="sub-nav-item">
+                                  <a class="sub-nav-link" href="product-edit.ejs">Edit</a>
+                             </li>
+                             <li class="sub-nav-item">
+                                  <a class="sub-nav-link" href="product-add.ejs">Create</a>
+                             </li>
+                        </ul>
+                   </div>
+              </li>
+
+              <li class="nav-item">
+                   <a class="nav-link menu-arrow" href="#sidebarCategory" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarCategory">
+                        <span class="nav-icon">
+                             <iconify-icon icon="solar:clipboard-list-bold-duotone"></iconify-icon>
+                        </span>
+                        <span class="nav-text"> Category </span>
+                   </a>
+                   <div class="collapse" id="sidebarCategory">
+                        <ul class="nav sub-navbar-nav">
+                             <li class="sub-nav-item">
+                                  <a class="sub-nav-link" href="category-list.ejs">List</a>
+                             </li>                         
+                             <li class="sub-nav-item">
+                                  <a class="sub-nav-link" href="category-edit.ejs">Edit</a>
+                             </li>
+                             <li class="sub-nav-item">
+                                  <a class="sub-nav-link" href="category-add.ejs">Create</a>
+                             </li>
+                        </ul>
+                   </div>
+              </li>
+
+              <li class="nav-item">
+                   <a class="nav-link menu-arrow" href="#sidebarInventory" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarInventory">
+                        <span class="nav-icon">
+                             <iconify-icon icon="solar:box-bold-duotone"></iconify-icon>
+                        </span>
+                        <span class="nav-text"> Inventory </span>
+                   </a>
+                   <div class="collapse" id="sidebarInventory">
+                        <ul class="nav sub-navbar-nav">
+
+                             <li class="sub-nav-item">
+                                  <a class="sub-nav-link" href="inventory-warehouse.ejs">Warehouse</a>
+                             </li>
+                             <li class="sub-nav-item">
+                                  <a class="sub-nav-link" href="inventory-received-orders.ejs">Received Orders</a>
+                             </li>
+                        </ul>
+                   </div>
+              </li>
+
+              <li class="nav-item">
+                   <a class="nav-link menu-arrow" href="#sidebarOrders" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarOrders">
+                        <span class="nav-icon">
+                             <iconify-icon icon="solar:bag-smile-bold-duotone"></iconify-icon>
+                        </span>
+                        <span class="nav-text"> Orders </span>
+                   </a>
+                   <div class="collapse" id="sidebarOrders">
+                        <ul class="nav sub-navbar-nav">
+
+                             <li class="sub-nav-item">
+                                  <a class="sub-nav-link" href="orders-list.ejs">List</a>
+                             </li>
+                             <li class="sub-nav-item">
+                                  <a class="sub-nav-link" href="order-detail.ejs">Details</a>
+                             </li>
+                             <li class="sub-nav-item">
+                                  <a class="sub-nav-link" href="order-cart.ejs">Cart</a>
+                             </li>
+                             <li class="sub-nav-item">
+                                  <a class="sub-nav-link" href="order-checkout.ejs">Check Out</a>
+                             </li>
+                        </ul>
+                   </div>
+              </li>
+
+              <li class="nav-item">
+                   <a class="nav-link menu-arrow" href="#sidebarPurchases" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarPurchases">
+                        <span class="nav-icon">
+                             <iconify-icon icon="solar:card-send-bold-duotone"></iconify-icon>
+                        </span>
+                        <span class="nav-text"> Purchases </span>
+                   </a>
+                   <div class="collapse" id="sidebarPurchases">
+                        <ul class="nav sub-navbar-nav">
+                             <li class="sub-nav-item">
+                                  <a class="sub-nav-link" href="purchase-list.ejs">List</a>
+                             </li>
+                             <li class="sub-nav-item">
+                                  <a class="sub-nav-link" href="purchase-order.ejs">Order</a>
+                             </li>
+                             <li class="sub-nav-item">
+                                  <a class="sub-nav-link" href="purchase-returns.ejs">Return</a>
+                             </li>
+                        </ul>
+                   </div>
+              </li>
+
+         
+
+    
+              <li class="menu-title mt-2">Users</li>
+
+              <li class="nav-item">
+                   <a class="nav-link" href="pages-profile.ejs">
+                        <span class="nav-icon">
+                             <iconify-icon icon="solar:chat-square-like-bold-duotone"></iconify-icon>
+                        </span>
+                        <span class="nav-text"> Profile </span>
+                   </a>
+              </li>
+
+              <li class="nav-item">
+                   <a class="nav-link menu-arrow" href="#sidebarRoles" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarRoles">
+                        <span class="nav-icon">
+                             <iconify-icon icon="solar:user-speak-rounded-bold-duotone"></iconify-icon>
+                        </span>
+                        <span class="nav-text"> Roles </span>
+                   </a>
+                   <div class="collapse" id="sidebarRoles">
+                        <ul class="nav sub-navbar-nav">
+                             <ul class="nav sub-navbar-nav">
+                                  <li class="sub-nav-item">
+                                       <a class="sub-nav-link" href="role-list.ejs">List</a>
+                                  </li>
+                                  <li class="sub-nav-item">
+                                       <a class="sub-nav-link" href="role-edit.ejs">Edit</a>
+                                  </li>
+                                  <li class="sub-nav-item">
+                                       <a class="sub-nav-link" href="role-add.ejs">Create</a>
+                                  </li>
+                             </ul>
+                        </ul>
+                   </div>
+              </li>
+
+              <li class="nav-item">
+                   <a class="nav-link menu-arrow" href="#sidebarCustomers" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarCustomers">
+                        <span class="nav-icon">
+                             <iconify-icon icon="solar:users-group-two-rounded-bold-duotone"></iconify-icon>
+                        </span>
+                        <span class="nav-text"> Customers </span>
+                   </a>
+                   <div class="collapse" id="sidebarCustomers">
+                        <ul class="nav sub-navbar-nav">
+
+                             <li class="sub-nav-item">
+                                  <a class="sub-nav-link" href="customer-list.ejs">List</a>
+                             </li>
+                             <li class="sub-nav-item">
+                                  <a class="sub-nav-link" href="customer-detail.ejs">Details</a>
+                             </li>
+                        </ul>
+                   </div>
+              </li>
+
+
+
+              
+         </ul>
+    </div>
+</div>
